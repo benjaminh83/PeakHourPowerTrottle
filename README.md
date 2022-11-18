@@ -5,7 +5,7 @@ Will limit the power usage in specified timeframes when grid power is scarce and
 This is highly relevant for areas with advanced grid metering and hourly energy price models. Also this will lead to greener energy consumption by limiting consumption in peak hours which usually require more black energy mix. 
 
 
-Example of ideal outcome from throttling power usage (show with hashrate from ETC mining, but relevant for all workloads, as they are not being stopped from processing, but just slowed down due to restrictions on power usage in the GPU and CPU):
+Example of ideal outcome from throttling power usage (show with hashrate from ETC mining, but relevant for all workloads such as Filecoin*. The idea is that no services are stopped from processing, but just slowed down due to restrictions on power usage in the GPU and CPU):
 
 ![image](https://user-images.githubusercontent.com/14029124/202670955-c94a163d-0917-4495-9dee-03eae767f6d6.png)
 
@@ -58,3 +58,6 @@ Its probably a good idea to manually check that you have the correct packages in
 
 
 `sudo cpupower frequency-set --governor performance`
+
+
+*Sealing (PC1, PC2, C2). Please be aware of the reduced throughput effects on the sealing pipeline, as this slowdown can cause the pipeline to clogg up when sectors are not being finalized fast enough.
