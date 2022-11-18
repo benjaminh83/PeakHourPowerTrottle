@@ -1,5 +1,5 @@
 [Unit]
-Description=Logs some system statistics to the systemd journal
+Description=Control when speedup will occur
 Requires=PWspeedup.service
 
 [Timer]
