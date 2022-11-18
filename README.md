@@ -49,3 +49,12 @@ The following files are provided and needs tweaking. This was tested on Ubuntu 2
 
 #### Remember to always update systemd when changing files:
 `sudo systemctl daemon-reload`
+
+#### Prerequisites / Troubleshooting
+Its probably a good idea to manually check that you have the correct packages installed, so that you are able to execute the commands like: 
+
+
+`sudo /usr/bin/nvidia-smi -pl 200`
+
+
+`sudo cpupower frequency-set --governor performance`
