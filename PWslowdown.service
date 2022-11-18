@@ -1,5 +1,5 @@
 [Unit]
-Description=Slow drown and save energy in peak hours
+Description=Slow down and save energy in peak hours
 
 [Service]
 ExecStart=/usr/bin/nvidia-smi -pl 100 
