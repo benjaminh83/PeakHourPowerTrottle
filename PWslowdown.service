@@ -1,0 +1,12 @@
+[Unit]
+Description=Slow drown and save energy in peak hours
+
+[Service]
+ExecStart=/usr/bin/nvidia-smi -pl 100 
+ExecStartPost=/usr/bin/cpupower frequency-set --governor powersave
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

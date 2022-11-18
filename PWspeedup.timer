@@ -1,0 +1,11 @@
+[Unit]
+Description=Logs some system statistics to the systemd journal
+Requires=PWspeedup.service
+
+[Timer]
+Unit=PWspeedup.service
+OnCalendar=*-*-* 10:00:00
+OnCalendar=*-*-* 22:00:00
+
+[Install]
+WantedBy=timers.target

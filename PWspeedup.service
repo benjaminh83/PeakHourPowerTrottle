@@ -1,0 +1,12 @@
+[Unit]
+Description=Speedup when running in off-peak hours
+
+[Service]
+ExecStart=/usr/bin/nvidia-smi -pl 288 
+ExecStartPost=/usr/bin/cpupower frequency-set --governor performance
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
