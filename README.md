@@ -31,7 +31,7 @@ The following files are provided and needs tweaking. This was tested on Ubuntu 2
 - Edit: `sudo nano /etc/systemd/system/PWspeedup.service` 
 
 ### PWspeedup.timer
-- Defines the time when the slowdown is triggered. Currently set to trigger at 10AM and 22PM  
+- Defines the time when the getting back full speed is triggered. Currently set to trigger at 10AM and 22PM  
 - Edit: `sudo nano /etc/systemd/system/PWspeedup.timer`
 
 
